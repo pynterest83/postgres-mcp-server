@@ -23,7 +23,7 @@ class PostgresConnection:
         self.config = config
         self.pool = None
     
-    async def connect(self) -> None:
+    async def connect(self) -> asyncpg.Pool:
         """Connect to PostgreSQL database"""
         try:
             self.pool = await asyncpg.create_pool(
