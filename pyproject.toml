@@ -5,9 +5,15 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "anthropic>=0.50.0",
     "asyncpg>=0.30.0",
+    "boto3>=1.38.0",
+    "examples>=1.0.2",
+    "gitpython>=3.1.44",
     "httpx>=0.28.1",
     "mcp[cli]>=1.6.0",
     "pyjwt>=2.10.1",
+    "pytest>=8.3.5",
+    "pytest-examples>=0.0.17",
     "python-dotenv>=1.1.0",
 ]
